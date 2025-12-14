@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>CodeLearn - Language Learning Platform</title>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Profile Icon (Leftmost) -->
+            <a href="../sub%20features/profile.html" class="profile-icon" title="Profile">
+                <img src="../assets/muichiro.jpg" alt="Profile" class="profile-img" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                <i class="fas fa-user-circle" aria-hidden="true"></i>
+            </a>
+            
+            <!-- Navigation Bar (Left-Center) -->
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="game.html">Home</a></li>
+                    <li><a href="roadmaps.html">Roadmaps</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Header actions (search, notifications) and Project Name (Right Side) -->
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="search" placeholder="Search courses, projects..." aria-label="Search">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <button class="icon-btn" title="Notifications"><i class="fas fa-bell"></i></button>
+            </div>
+
+            <div class="project-name">
+                <div class="logo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h1><span class="code-text">Code</span><span class="learn-text">Learn</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Side Navigation (beautiful vertical nav) -->
+    <aside class="side-nav" aria-label="Main navigation">
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="main.html"><i class="fas fa-home"></i><span class="label">Dashboard</span></a></li>
+                <li class="nav-item"><a href="roadmaps.html"><i class="fas fa-map"></i><span class="label">Roadmaps</span></a></li>
+                <li class="nav-item"><a href="games.html"><i class="fas fa-gamepad"></i><span class="label">Projects</span></a></li>
+                <li class="nav-item"><a href="../sub%20features/profile.html"><i class="fas fa-user"></i><span class="label">Profile</span></a></li>
+                <li class="nav-item"><a href="settings.html"><i class="fas fa-cog"></i><span class="label">Settings</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content Section -->
+    <section class="learning-section-wrapper">
+        <div class="container">
+
+            <!-- Web Development Section -->
+            <section class="learning-section">
+                <div class="section-header-small">
+                    <h3>Web Development</h3>
+                    <p class="technologies">HTML • CSS • JavaScript • ReactJS • NodeJS</p>
+                </div>
+                <div class="learning-boxes">
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML" class="language-icon">
+                        <div class="language-name">HTML</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS" class="language-icon">
+                        <div class="language-name">CSS</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript" class="language-icon">
+                        <div class="language-name">JavaScript</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="ReactJS" class="language-icon">
+                        <div class="language-name">ReactJS</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg" alt="NodeJS" class="language-icon">
+                        <div class="language-name">NodeJS</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mobile Development Section -->
+            <section class="learning-section">
+                <div class="section-header-small">
+                    <h3>Mobile Development</h3>
+                    <p class="technologies">React Native • Flutter • Swift • Kotlin</p>
+                </div>
+                <div class="learning-boxes">
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React Native" class="language-icon">
+                        <div class="language-name">React Native</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/flutter.svg" alt="Flutter" class="language-icon">
+                        <div class="language-name">Flutter</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/swift-15.svg" alt="Swift" class="language-icon">
+                        <div class="language-name">Swift</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/kotlin-1.svg" alt="Kotlin" class="language-icon">
+                        <div class="language-name">Kotlin</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Backend Development Section -->
+            <section class="learning-section">
+                <div class="section-header-small">
+                    <h3>Backend Development</h3>
+                    <p class="technologies">Python • Java • C# • PHP • Go</p>
+                </div>
+                <div class="learning-boxes">
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python" class="language-icon">
+                        <div class="language-name">Python</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/java-14.svg" alt="Java" class="language-icon">
+                        <div class="language-name">Java</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="C#" class="language-icon">
+                        <div class="language-name">C#</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/php-1.svg" alt="PHP" class="language-icon">
+                        <div class="language-name">PHP</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/go-14.svg" alt="Go" class="language-icon">
+                        <div class="language-name">Go</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Science Section -->
+            <section class="learning-section">
+                <div class="section-header-small">
+                    <h3>Data Science</h3>
+                    <p class="technologies">Python • R • SQL • Machine Learning • TensorFlow</p>
+                </div>
+                <div class="learning-boxes">
+                    <div class="language-box">
+                            <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python" class="language-icon">
+                        <div class="language-name">Python</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                            <img src="https://cdn.worldvectorlogo.com/logos/r-lang.svg" alt="R" class="language-icon">
+                        <div class="language-name">R</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                            <img src="https://cdn.worldvectorlogo.com/logos/sql.svg" alt="SQL" class="language-icon">
+                        <div class="language-name">SQL</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                            <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Machine Learning" class="language-icon">
+                        <div class="language-name">Machine Learning</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                            <img src="https://cdn.worldvectorlogo.com/logos/tensorflow.svg" alt="TensorFlow" class="language-icon">
+                        <div class="language-name">TensorFlow</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Frontend Frameworks Section -->
+            <section class="learning-section">
+                <div class="section-header-small">
+                    <h3>Frontend Frameworks</h3>
+                    <p class="technologies">Vue.js • Angular • Next.js • Svelte • Ember</p>
+                </div>
+                <div class="learning-boxes">
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" alt="Vue.js" class="language-icon">
+                        <div class="language-name">Vue.js</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" alt="Angular" class="language-icon">
+                        <div class="language-name">Angular</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Next.js" class="language-icon">
+                        <div class="language-name">Next.js</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/svelte-1.svg" alt="Svelte" class="language-icon">
+                        <div class="language-name">Svelte</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/ember-2.svg" alt="Ember.js" class="language-icon">
+                        <div class="language-name">Ember.js</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Databases Section -->
+            <section class="learning-section">
+                <div class="section-header-small">
+                    <h3>Databases</h3>
+                    <p class="technologies">MongoDB • PostgreSQL • MySQL • Firebase • Redis</p>
+                </div>
+                <div class="learning-boxes">
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB" class="language-icon">
+                        <div class="language-name">MongoDB</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="PostgreSQL" class="language-icon">
+                        <div class="language-name">PostgreSQL</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/mysql-1.svg" alt="MySQL" class="language-icon">
+                        <div class="language-name">MySQL</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="Firebase" class="language-icon">
+                        <div class="language-name">Firebase</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/redis.svg" alt="Redis" class="language-icon">
+                        <div class="language-name">Redis</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cloud & DevOps Section -->
+            <section class="learning-section">
+                <div class="section-header-small">
+                    <h3>Cloud & DevOps</h3>
+                    <p class="technologies">AWS • Azure • Google Cloud • Docker • Kubernetes</p>
+                </div>
+                <div class="learning-boxes">
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="AWS" class="language-icon">
+                        <div class="language-name">AWS</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/microsoft-azure-3.svg" alt="Azure" class="language-icon">
+                        <div class="language-name">Azure</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/google-cloud-1.svg" alt="Google Cloud" class="language-icon">
+                        <div class="language-name">Google Cloud</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/docker-4.svg" alt="Docker" class="language-icon">
+                        <div class="language-name">Docker</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/kubernetes.svg" alt="Kubernetes" class="language-icon">
+                        <div class="language-name">Kubernetes</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Development Section -->
+            <section class="learning-section">
+                <div class="section-header-small">
+                    <h3>Game Development</h3>
+                    <p class="technologies">Unity • Unreal Engine • Godot • C++ • Game Design</p>
+                </div>
+                <div class="learning-boxes">
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/unity-69.svg" alt="Unity" class="language-icon">
+                        <div class="language-name">Unity</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/unreal-engine.svg" alt="Unreal Engine" class="language-icon">
+                        <div class="language-name">Unreal Engine</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/godot-engine.svg" alt="Godot" class="language-icon">
+                        <div class="language-name">Godot</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/c-plus-plus.svg" alt="C++" class="language-icon">
+                        <div class="language-name">C++</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/game-developer-conference-gdc-2020-logo.svg" alt="Game Design" class="language-icon">
+                        <div class="language-name">Game Design</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Version Control & Tools Section -->
+            <section class="learning-section">
+                <div class="section-header-small">
+                    <h3>Version Control & Tools</h3>
+                    <p class="technologies">Git • GitHub • GitLab • Webpack • Babel</p>
+                </div>
+                <div class="learning-boxes">
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="Git" class="language-icon">
+                        <div class="language-name">Git</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="GitHub" class="language-icon">
+                        <div class="language-name">GitHub</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" alt="GitLab" class="language-icon">
+                        <div class="language-name">GitLab</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/webpack-icon.svg" alt="Webpack" class="language-icon">
+                        <div class="language-name">Webpack</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/babel-10.svg" alt="Babel" class="language-icon">
+                        <div class="language-name">Babel</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI & Machine Learning Section -->
+            <section class="learning-section">
+                <div class="section-header-small">
+                    <h3>AI & Machine Learning</h3>
+                    <p class="technologies">TensorFlow • PyTorch • Scikit-learn • OpenAI • NLP</p>
+                </div>
+                <div class="learning-boxes">
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/tensorflow.svg" alt="TensorFlow" class="language-icon">
+                        <div class="language-name">TensorFlow</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/pytorch-2.svg" alt="PyTorch" class="language-icon">
+                        <div class="language-name">PyTorch</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Scikit-learn" class="language-icon">
+                        <div class="language-name">Scikit-learn</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/openai-2.svg" alt="OpenAI" class="language-icon">
+                        <div class="language-name">OpenAI & GPT</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="NLP" class="language-icon">
+                        <div class="language-name">Natural Language Processing</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Computer Vision" class="language-icon">
+                        <div class="language-name">Computer Vision</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/jupyter.svg" alt="Jupyter" class="language-icon">
+                        <div class="language-name">Jupyter Notebooks</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                    <div class="language-box">
+                        <img src="https://cdn.worldvectorlogo.com/logos/keras.svg" alt="Keras" class="language-icon">
+                        <div class="language-name">Keras</div>
+                        <button class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
